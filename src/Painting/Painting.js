@@ -4,7 +4,7 @@ import Button from "./../Button/Button"
 const Painting = (props) =>  {
     console.log("Props", props)
     return(
-<div>
+<div className="paintings">
     <ul>
     {props.data.map((item) => 
     (
