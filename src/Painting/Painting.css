@@ -2,23 +2,23 @@
     list-style: none;
     margin: 0;
     display: flex;
-    flex-direction: row; /* تصاویر در یک ردیف قرار می‌گیرند */
+    flex-direction: row; /* Images are displayed in a row */
     padding: 0;
-    flex-wrap: wrap; /* اگر فضا کافی نباشد، تصاویر به ردیف بعدی منتقل می‌شوند */
-    justify-content: center; /* تصاویر در وسط صفحه قرار بگیرند */
+    flex-wrap: wrap; /* If there is not enough space, images will move to the next row */
+    justify-content: center; /* Centers the images on the page */
   }
   
   .paintings li {
     margin: 10px;
     width: 200px;
     display: flex;
-    flex-direction: column; /* محتوای داخل هر تصویر (عنوان، تصویر، قیمت) به صورت عمودی */
+    flex-direction: column; /* Inside each image, elements (title, image, price) are arranged vertically */
   }
   
   .paintings li img {
     max-width: 100%;
-    width: 200px; /* عرض ثابت برای تصاویر */
-    height: auto; /* ارتفاع خودکار */
+    width: 200px; /* Fixed width for images */
+    height: auto; /* Auto height to maintain aspect ratio */
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -34,6 +34,7 @@
     height: 20px;
     width: 100%;
   }
+  
   .slideshow img {
     width: 100%;
   }
@@ -46,7 +47,7 @@
   .placeholder {
     width: 45%;
     height: 200px;
-    margin: 10px;  
+    margin: 10px;
     position: relative;
   }
   
@@ -65,3 +66,4 @@
     width: 200px;
     margin: 10px;
   }
+  
