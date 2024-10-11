@@ -6,6 +6,7 @@ import About from '../About/About'
 import Painting from "../Painting/Painting";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "../Contact/Contact";
+import JockBlog from "../JockBlog/JockBlog";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Painting data={PAINTING} />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/jokes" element={<JockBlog />} />
           </Routes>
         </Layouts>
       </Router>

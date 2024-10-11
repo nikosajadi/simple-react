@@ -18,6 +18,11 @@ const Navbar = () => {
     <button>Contact</button>
   </Link>
 </li>
+<li>
+  <Link to="/JockBlog">
+    <button>JockBlog</button>
+  </Link>
+</li>
 </ul>
     </>
   )};
