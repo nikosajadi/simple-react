@@ -1,0 +1,71 @@
+/* Style for the main container */
+.jockblog-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Message for when there are no jokes */
+  .no-jokes {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  /* List styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .joke-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title for each joke */
+  .joke-title {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Content of the joke */
+  .joke-content {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Image styling */
+  .joke-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Hover effect for list items */
+  .joke-item:hover {
+    background-color: #872828;
+  }
+  

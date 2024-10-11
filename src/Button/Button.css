@@ -1,12 +1,18 @@
 .button {
-  background-color: rgb(204, 166, 217);
+  background-color: rgb(193, 188, 195); /* Soft neutral color */
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px; /* Increased padding for better spacing */
   border: none;
-  border-radius: 5px;
+  border-radius: 8px; /* Slightly more rounded corners */
   cursor: pointer;
+  margin-top: 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern and clean font */
+  font-size: 16px; /* Increased font size for better readability */
+  font-weight: 600; /* Makes the text bold for emphasis */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .button:hover {
-  background-color: rgb(198, 144, 216);
+  background-color: rgb(115, 113, 116); /* Darker shade for hover effect */
+  transform: scale(1.05); /* Slightly enlarges button on hover */
 }

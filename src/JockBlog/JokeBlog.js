@@ -16,24 +16,25 @@ const JockBlog = () => {
   };
 
   return (
-    <div>
+    <div className="jockblog-container">
       {/* Button to load jokes into the state */}
       <Button handleClick={handleJokeClick}>
         {loading ? 'Loading...' : 'Load Jokes into State'}
       </Button>
 
       {/* Conditional rendering: if no jokes, show "No Jokes" */}
-      {jokes.length === 0 && <div>No Jokes</div>}
+      {jokes.length === 0 && <div className="no-jokes">No Jokes</div>}
 
       {/* Display jokes once they're loaded */}
       {jokes.length > 0 && (
         <ul>
-          {JOKES.map((joke) => (
-            <li key={joke.id}>
+          {jokes.map((joke) => (
+                <li key={joke.id} className="joke-item">
               <h3>{joke.title}</h3>
               <p>{joke.content}</p>
               {/* Image path relative to the public folder */}
-              <img src={`/assets/img/jokes/${joke.image}`} alt={joke.title} />
+              <img   className="joke-image" 
+              src={`/assets/img/jokes/${joke.image}`} alt={joke.title} />
             </li>
           ))}
         </ul>
