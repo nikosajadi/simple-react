@@ -1,45 +1,44 @@
 [
-    {
-      "id": 1,
-      "title": "The Programmer Cat",
-      "content": "Programmers are like cats; they always start in the wrong place!\nبرنامه‌نویس‌ها مثل گربه‌ها هستند؛ همیشه از جایی شروع می‌کنند که نباید باشه!",
-      "image": "/mnt/data/A_cat_working_on_a_computer,_representing_a_progra.png"
-    },
-    {
-      "id": 2,
-      "title": "Null Pointer Exception Pool",
-      "content": "Why can't programmers swim? Because every time they go into the water, they say: 'null pointer exception!'\nچرا برنامه‌نویس‌ها نمی‌توانند شنا کنند؟ چون هر بار که وارد آب می‌شوند، می‌گویند: 'null pointer exception!'",
-      "image": "/mnt/data/A_programmer_sitting_by_a_swimming_pool,_holding_a.png"
-    },
-    {
-      "id": 3,
-      "title": "Late Night Debugging",
-      "content": "What makes a good programmer? Someone who codes late into the night and debugs it the next morning!\nبرنامه‌نویس خوب کیه؟ کسی که تا دیر وقت کد میزنه و صبح زود میاد کدهای شب قبل رو دیباگ می‌کنه!",
-      "image": "/mnt/data/A_tired_programmer_working_late_at_night,_surround.png"
-    },
-    {
-      "id": 4,
-      "title": "404 Water Not Found",
-      "content": "A programmer walks into a restaurant and orders 'a glass of water.' The waiter comes back and says: 'HTTP 404: Water not found!'\nیه برنامه‌نویس وارد رستوران میشه و سفارش 'یک لیوان آب' میده. پیشخدمت برمی‌گرده و میگه: 'HTTP 404: آب پیدا نشد!'",
-      "image": "/mnt/data/A_humorous_scene_of_a_programmer_sitting_in_a_rest.png"
-    },
-    {
-      "id": 5,
-      "title": "Tea with Error 500",
-      "content": "Why do programmers always buy two cups of tea? Because they know one of them will give a 500 error!\nچرا برنامه‌نویس‌ها همیشه دو تا لیوان چای می‌خرند؟ چون می‌دونند یه دونه از اون‌ها ارور 500 میده!",
-      "image": "/mnt/data/A_light-hearted_scene_showing_a_programmer_sitting.png"
-    },
-    {
-      "id": 6,
-      "title": "Morning Bug Hunt",
-      "content": "What does a programmer say when they wake up? 'I think I found a bug in my code!'\nیه برنامه‌نویس وقتی از خواب بیدار میشه چی میگه؟ 'من فکر کنم توی کدم یه باگ پیدا کردم!'",
-      "image": "/mnt/data/A_humorous_image_of_a_programmer_waking_up,_still_.png"
-    },
-    {
-      "id": 7,
-      "title": "Happy Code Moment",
-      "content": "How can you make a programmer happy? Give them a line of code that works!\nچطور می‌تونی یه برنامه‌نویس رو خوشحال کنی؟ یه خط کد بده که کار کنه!",
-      "image": "/mnt/data/A_happy_programmer_sitting_at_a_desk_with_a_big_sm.png"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "The Programmer Cat",
+    "content": "Programmers are like cats; they always start in the wrong place!",
+    "image": "11.png"
+  },
+  {
+    "id": 2,
+    "title": "Null Pointer Exception Pool",
+    "content": "Why can't programmers swim? Because every time they go into the water, they say: 'null pointer exception!'",
+    "image": "12.png"
+  },
+  {
+    "id": 3,
+    "title": "Late Night Debugging",
+    "content": "What makes a good programmer? Someone who codes late into the night and debugs it the next morning!",
+    "image": "13.png"
+  },
+  {
+    "id": 4,
+    "title": "404 Water Not Found",
+    "content": "A programmer walks into a restaurant and orders 'a glass of water.' The waiter comes back and says: 'HTTP 404: Water not found!'",
+    "image": "14.png"
+  },
+  {
+    "id": 5,
+    "title": "Tea with Error 500",
+    "content": "Why do programmers always buy two cups of tea? Because they know one of them will give a 500 error!",
+    "image": "15.png"
+  },
+  {
+    "id": 6,
+    "title": "Morning Bug Hunt",
+    "content": "What does a programmer say when they wake up? 'I think I found a bug in my code!'",
+    "image": "16.png"
+  },
+  {
+    "id": 7,
+    "title": "Happy Code Moment",
+    "content": "How can you make a programmer happy? Give them a line of code that works!",
+    "image": "17.png"
+  }
+]

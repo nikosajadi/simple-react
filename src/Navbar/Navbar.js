@@ -19,8 +19,8 @@ const Navbar = () => {
   </Link>
 </li>
 <li>
-  <Link to="/JockBlog">
-    <button>JockBlog</button>
+  <Link to="/JokeBlog">
+    <button>JokeBlog</button>
   </Link>
 </li>
 </ul>
