@@ -13,6 +13,6 @@
 }
 
 .button:hover {
-  background-color: rgb(115, 113, 116); /* Darker shade for hover effect */
+  background-color: rgb(188, 188, 188); /* Darker shade for hover effect */
   transform: scale(1.05); /* Slightly enlarges button on hover */
 }

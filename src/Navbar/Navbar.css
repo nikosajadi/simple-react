@@ -1,3 +1,4 @@
+/* Navbar styling */
 .Navbar {
     width: 100%;
     list-style: none;
@@ -5,27 +6,43 @@
     padding: 0px;
     display: flex;
 }
+
 .Navbar li button {
     border: none;
-    font-size: 10px;
-    color: #2c3e50;
+    font-size: 14px; /* Adjusted font size for better readability */
+  
     cursor: pointer;
-}
-.Navbar li button:hover {
-    border: none;
-    color: #281955;
+    font-family: 'Arial', sans-serif; /* You can replace this with any font you prefer */
+    font-weight: 600; /* Makes the text bold */
+    text-transform: uppercase; /* Makes the button text all caps */
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    background-color: transparent; /* No background color */
+    color: #2c3e50; 
 }
 
+.Navbar li button:hover {
+    border: none;
+    color: #1f0961;
+}
+
+/* Button class styling */
 .button {
-    background-color: rgb(193, 188, 195);
-    color: white;
+    background-color: transparent; /* Remove background color */
+    color: #2c3e50; /* Dark color for the text */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: rgb(115, 113, 116);
-  }
-  
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(57, 92, 66);
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
