@@ -1,35 +1,42 @@
 import React, { useState, useEffect } from 'react';
-import JOKES from './JOKES.json'
-import Button from "../Button/Button"
+//import JOKES from './JOKES.json'
+
 
 
 const JockBlog = () => {
-  const [jokes, setJokes] = useState([]); // State to store jokes
-  const [loading, setLoading] = useState(false); // State for loading status
+  const [jokes, setJokes] = useState([]); 
+  const [Loaded, setLoaded] = useState(false);
 
-  const handleJokeClick = () => {
-    setLoading(true); // Set loading state to true when button is clicked
-    setTimeout(() => {
-      setJokes(JOKES); // Load jokes after 1 second delay
-      setLoading(false); // Set loading state back to false
-    }, 1000);
- 
-  
+  const LoadJokes = async () => {
+    setLoaded(false);
+    try {
+      const responseJokes = await fetch('https://run.mocky.io/v3/c5934e98-0a84-44dd-b344-9782dcee3448');
+
+      if (!responseJokes.ok) {
+        throw new Error(`HTTP error! Status: ${responseJokes.status}`);
+      }
+      const jokes = await responseJokes.json();
+      console.log("Fetched jokes:", jokes);
+      setJokes(jokes);
+    } catch (error) {
+      console.error('Error loading jokes:', error);
+    } finally {
+      setLoaded(true);
+    }
   };
-  useEffect (() => {
-    console.log('useEffect')
-   
-   }, []);
+
+  useEffect(() => {
+    console.log('useEffect');
+    LoadJokes();
+  }, []);
+
   return (
     <div className="jockblog-container">
-      {/* Button to load jokes into the state */}
-      <Button handleClick={handleJokeClick}>
-        {loading ? 'Loading...' : 'Load Jokes into State'}
-      </Button>
+      {Loaded  && <div>Loading</div>}  
+
 
       {/* Conditional rendering: if no jokes, show "No Jokes" */}
       {jokes.length === 0 && <div className="no-jokes">No Jokes</div>}
-
       {/* Display jokes once they're loaded */}
       {jokes.length > 0 && (
         <ul>
