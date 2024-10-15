@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import JOKES from './JOKES.json'
 import Button from "../Button/Button"
 
@@ -13,8 +13,13 @@ const JockBlog = () => {
       setJokes(JOKES); // Load jokes after 1 second delay
       setLoading(false); // Set loading state back to false
     }, 1000);
+ 
+  
   };
-
+  useEffect (() => {
+    console.log('useEffect')
+   
+   }, []);
   return (
     <div className="jockblog-container">
       {/* Button to load jokes into the state */}
