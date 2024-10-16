@@ -8,28 +8,19 @@ const JockBlog = () => {
   const [Loaded, setLoaded] = useState(false);
 
   const LoadJokes = async () => {
-    setLoaded(false);
-    try {
+    setLoaded(true);
+    
       const responseJokes = await fetch('https://run.mocky.io/v3/76dea8d2-b956-42eb-adde-edc5f9fe8167');
-
-
-
-      if (!responseJokes.ok) {
-        throw new Error(`HTTP error! Status: ${responseJokes.status}`);
-      }
       const jokes = await responseJokes.json();
       console.log("Fetched jokes:", jokes);
       setJokes(jokes);
-    } catch (error) {
-      console.error('Error loading jokes:', error);
-    } finally {
-      setLoaded(true);
+      setLoaded(false);
     }
-  };
+  
 
   useEffect(() => {
     console.log('useEffect');
-    LoadJokes();
+    LoadJokes();  //call to Api again
   }, []);
 
   return (

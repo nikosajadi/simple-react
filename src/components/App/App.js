@@ -1,7 +1,8 @@
 import React from "react";
 import './App.css';
 import Layouts from "../Layouts/Layout";
-import PAINTING from './PAINTING.json';
+
+import PAINTING from '../App/PAINTING.json';
 import About from '../About/About'
 import Painting from "../Painting/Painting";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
