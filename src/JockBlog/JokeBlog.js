@@ -10,7 +10,9 @@ const JockBlog = () => {
   const LoadJokes = async () => {
     setLoaded(false);
     try {
-      const responseJokes = await fetch('https://run.mocky.io/v3/c5934e98-0a84-44dd-b344-9782dcee3448');
+      const responseJokes = await fetch('https://run.mocky.io/v3/76dea8d2-b956-42eb-adde-edc5f9fe8167');
+
+
 
       if (!responseJokes.ok) {
         throw new Error(`HTTP error! Status: ${responseJokes.status}`);
