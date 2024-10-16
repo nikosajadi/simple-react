@@ -1,23 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Button from "../Button/Button";
 
-/**
- * Contact Component
- * 
- * A form that allows users to input a subject and a request message.
- * Upon submission, the subject and request are logged to the console.
- */
+
 const Contact = () => {
   // State variables to hold the form input values
   const [subject, setSubject] = useState('');
   const [textarea, setTextarea] = useState('');
+ const inputSubjectRef = useRef(null)
+ 
+useEffect (() => {
+  console.log('inputSubjectRef : ', inputSubjectRef  );
+  inputSubjectRef.current.focus(); // and sets the focus on the input element referenced by `inputSubjectRef`.
+}, [])
 
-  /**
-   * HandleChangeSubject
-   * 
-   * Updates the subject state when the user types in the subject input field.
-   * @param {object} event - The event object containing the new input value.
-   */
+
   const HandleChangeSubject = (event) => {
     setSubject(event.target.value);
   };
@@ -51,8 +47,10 @@ const Contact = () => {
 
       {/* Input for subject */}
       <div className="formControl">
-        <input onChange={HandleChangeSubject} type="text" placeholder="subject" />
-        <div>Subject: {subject}</div>
+        <input 
+        ref={inputSubjectRef }
+        onChange={HandleChangeSubject} type="text" placeholder="subject" />
+        <div>{subject}</div>
       </div>
 
       {/* Textarea for the request message */}
