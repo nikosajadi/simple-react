@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Button from '../Button/Button';
 import './JokeBlog.css';
 
@@ -37,9 +37,9 @@ const JockBlog = () => {
     return parseInt(jokes.length / 2);
   };
 
-  const handleClickOnPages = (pageNumber) => {
+  const handleClickOnPages = useCallback((pageNumber) => {
     setActivePageNumber(pageNumber);
-  };
+  },[]);
 
   return (
     <div className="jockblog-container">
