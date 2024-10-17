@@ -10,17 +10,17 @@ const Header = () => {
   const titles = {
     '/': 'Shop',
     '/about': 'About',
-    '/blog': 'Blog',
+    '/JokeBlog': 'JokBlog',
     '/contact': 'Contact',
   };
 
-  // Set default title to 'Shop'
-  let title = 'Shop';
+   // Use the pathname to get the correct title, with a default fallback
+   const title = titles[pathname] || 'Page';
 
   // Check if the pathname exists in the titles object
-  if (pathname in titles) {
-    title = titles[pathname];
-  }
+//   if (pathname in titles) {
+//     title = titles[pathname];
+//   }
 
   return (
     <div className="Header">
