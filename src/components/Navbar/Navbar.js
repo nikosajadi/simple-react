@@ -6,6 +6,12 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <ul className="Navbar">
+            <li>
+        <Link to="/">
+        <button className='button'>Shop</button>
+        
+        </Link>
+      </li>
       <li>
         <Link to="/about">
         <button className='button'>About me</button>
