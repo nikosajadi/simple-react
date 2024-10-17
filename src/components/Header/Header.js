@@ -4,30 +4,33 @@ import Navbar from '../Navbar/Navbar';
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const { pathname } = useLocation();
+  let { pathname } = useLocation();
+  let title = '';
 
-  // Object to map paths to titles
-  const titles = {
-    '/': 'Shop',
-    '/about': 'About',
-    '/JokeBlog': 'JokBlog',
-    '/contact': 'Contact',
-  };
-
-   // Use the pathname to get the correct title, with a default fallback
-   const title = titles[pathname] || 'Page';
-
-  // Check if the pathname exists in the titles object
-//   if (pathname in titles) {
-//     title = titles[pathname];
-//   }
+  switch (pathname) {
+    case '/':
+      title = 'Shop';
+      break;
+    case '/about':
+      title = 'About';
+      break;
+    case '/blog':
+      title = 'Blog';
+      break;
+    case '/contact':
+      title = 'Contact';
+      break;
+    default:
+      title = 'Page';
+      break;
+  }
 
   return (
     <div className="Header">
       <div className="TopBar">
         <Navbar />
       </div>
-      <h3>{title}</h3>
+      <h3>{title}</h3> 
     </div>
   );
 };

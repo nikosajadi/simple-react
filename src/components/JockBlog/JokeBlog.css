@@ -1,4 +1,22 @@
 /* Style for the main container */
+.pagination {
+  display: flex;
+  justify-content: center; /* Centers the pagination */
+  list-style-type: none; /* Removes the bullet points */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pagination li {
+  margin: 0 5px; /* Adds space between the pagination buttons */
+}
+
+.pagination .active {
+  font-weight: bold; /* Optional: highlight the active page */
+}
+
+
+
 .jockblog-container {
     padding: 20px;
     font-family: Arial, sans-serif;
