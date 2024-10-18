@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import './Header.css';
 import Navbar from '../Navbar/Navbar';
 import { useLocation } from 'react-router-dom';
-import CartContext from "../Contexts/CartContext";
+import CartContext from "../../contexts/CartContext";
 import { PiShoppingCartFill } from "react-icons/pi";
 
 const Header = () => {

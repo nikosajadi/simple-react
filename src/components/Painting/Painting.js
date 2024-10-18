@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useReducer } from "react";
 import Button from "./../Button/Button";
 import './Painting.css';
 import { MdOutlineAdd } from 'react-icons/md';
