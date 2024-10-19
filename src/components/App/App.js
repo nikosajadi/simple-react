@@ -8,9 +8,16 @@ import Painting from "../Painting/Painting";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "../Contact/Contact";
 import JockBlog from "../JockBlog/JokeBlog";
+import ThemeContext from "../../contexts/ThemContext";
+import themeConfig from '../../configs/theme';
+
+
 
 function App() {
   return (
+    <ThemeContext.Provider value={{
+      theme: themeConfig,
+    }}>
     <div className="App">
       <Router>
         <Layouts>
@@ -23,6 +30,7 @@ function App() {
         </Layouts>
       </Router>
     </div>
+    </ThemeContext.Provider>
   );
 }
 
