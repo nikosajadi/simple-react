@@ -16,3 +16,6 @@ const Button = ({
 );
 
 export default Button;
+
+
+//{...props}>  send ALL props to Button

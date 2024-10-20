@@ -1,14 +1,19 @@
-import React from "react";
-import './Footer.css'
+import React, { useContext } from "react";
+import './Footer.css';
+import ThemeContext from "../../contexts/ThemContext";
 
 
 const Footer = () => {
+  
+  const themValues = useContext(ThemeContext)
+   console.log(":themeValuss", themValues)
+
   return(
     <div className="Footer">
       <h5>Developed By Niko</h5>
       <div>
-         <button className="green">green</button>
-         <button className="blue">blue</button>
+         <button onClick={()=> themValues.setActiveTheme('green')} className="green">green</button>
+         <button onClick={()=> themValues.setActiveTheme('blue')} className="blue">blue</button>
       </div>
     </div>
   )

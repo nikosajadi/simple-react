@@ -1,9 +1,10 @@
 import React, { useState, useContext} from "react";
 import Button from "./../Button/Button";
 import './Painting.css';
-import { MdOutlineAdd } from 'react-icons/md';
+import { MdBorderColor, MdOutlineAdd } from 'react-icons/md';
 import { HiMinus } from 'react-icons/hi';
 import ThemeContext from '../../contexts/ThemContext'; 
+
 
 
 
@@ -38,7 +39,13 @@ const Painting = (props) => {
             <span>
               <h4>Price: {item.price}</h4>
             </span>
-            <Button handleClick={() => addToCart(item.id)}>
+            <Button
+              handleClick={() => addToCart(item.id)}
+              style={{
+                color: themValues.theme.color, // Correct style prop syntax
+                MdBorderColor: themValues.theme.color,
+              }}
+            >
               {addedItems[item.id] ? (
                 <>
                   <HiMinus /> Remove
@@ -54,6 +61,6 @@ const Painting = (props) => {
       </ul>
     </div>
   );
-};
-
+  
+}
 export default Painting;

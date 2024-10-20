@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState}from "react";
 import './App.css';
 import Layouts from "../Layouts/Layout";
 
@@ -15,9 +15,11 @@ import themeConfig from '../../configs/theme';
 
 
 function App() {
+   const [activeTheme, setActiveTheme]= useState('green')
   return (
     <ThemeContext.Provider value={{
-      theme: themeConfig,
+      theme: themeConfig[activeTheme],
+      setActiveTheme,
     }}>
     <div className="App">
       <Router>
