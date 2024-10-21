@@ -1,33 +1,25 @@
-
-
 const CartReducer = (state, action) => {
-console.log("action", action, state);
-let newCarts = []
-    switch (action.type) {
-      case 'ADD_TO_CART': 
-        return {
-          ...state,
-          // Add logic here to handle adding an item to the cart
-          carts: [
-            ...state.carts,
-            action.id
-          ]
-        };
+  let newCarts = []; // Initialize newCarts as an empty array
 
-        case 'REMOVE_FROM_CART':
-          newCarts = state.carts
-          newCarts.splice(
-            state.carts.findIndex((cartId) => cartId === action.id),
-            1
-          );
-          localStorage.setItem("carts", JSON.stringify(newCarts));
-          return {
-            ...state,
-            carts: newCarts,
-          };
-      default:
-          break;
+  switch (action.type) {
+    case 'ADD_TO_CART':
+      newCarts = [...state.carts, action.id]; // Add the new item to the cart
+      return {
+        ...state,
+        carts: newCarts, // Update the state with the new cart
+      };
+
+    case 'REMOVE_FROM_CART':
+      // Remove the item from the cart by filtering it out (without mutation)
+      newCarts = state.carts.filter(cartId => cartId !== action.id);
+      return {
+        ...state,
+        carts: newCarts, // Update the state with the filtered cart
+      };
+
+    default:
+      return state; // Always return the state in case of an unknown action
   }
-}
+};
 
-export default CartReducer
+export default CartReducer;

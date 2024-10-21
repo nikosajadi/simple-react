@@ -1,15 +1,22 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import CartContext from "../../contexts/CartContext";
 import CartReducer from "../../reducers/Carts";
 import './Layout.css';
+import PropTypes from 'prop-types';
 
 const Layouts = ({ children }) => {
-  // Initial state should be wrapped correctly
+  let carts = JSON.parse(localStorage.getItem("carts")) || []; // Fallback to empty array if localStorage is empty
+
   const [state, dispatch] = useReducer(CartReducer, {
-    carts: [],  // Initial state with carts as an empty array
+    carts: carts,
   });
+
+  // Save carts to localStorage whenever the carts state changes
+  useEffect(() => {
+    localStorage.setItem("carts", JSON.stringify(state.carts));
+  }, [state.carts]);
 
   return (
     <CartContext.Provider
@@ -24,6 +31,11 @@ const Layouts = ({ children }) => {
       </div>
     </CartContext.Provider>
   );
-}
+};
+
+Layouts.propTypes = {
+  children: PropTypes.node.isRequired, // Validates that children is passed and is of the correct type
+};
 
 export default Layouts;
+
