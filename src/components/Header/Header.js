@@ -15,7 +15,7 @@ const Header = () => {
   if (pathname === "/about") title = "About";
   if (pathname === "/blog") title = "Blog";
   if (pathname === "/contact") title = "Contact";
-  if (pathname.includes('product')) title = "Shop";
+  if (pathname.includes('painting')) title = "Shop";
 
   return (
     <div className="Header">
