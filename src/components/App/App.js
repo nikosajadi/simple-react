@@ -1,7 +1,7 @@
 import React, {useState}from "react";
 import './App.css';
 import Layouts from "../Layouts/Layout";
-
+import SinglePaint from '../SinglePaint/SinglePaint';
 import PAINTING from '../App/PAINTING.json';
 import About from '../About/About'
 import Painting from "../Painting/Painting";
@@ -29,6 +29,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/JokeBlog" element={<JockBlog />} />
+            <Route path="/painting/:id" element={<SinglePaint />} />
           </Routes>
         </Layouts>
       </Router>
