@@ -10,7 +10,7 @@ const Header = () => {
   let title = '';
  
   const {carts} = useContext (CartContext);
-
+  console.log ("carts:",carts)
   switch (pathname) {
     case '/':
       title = 'Shop';

@@ -8,7 +8,7 @@ import Painting from "../Painting/Painting";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "../Contact/Contact";
 import JockBlog from "../JockBlog/JokeBlog";
-import ThemeContext from "../../contexts/ThemContext";
+import ThemeContext from "../../contexts/ThemeContext";
 import themeConfig from '../../configs/theme';
 
 
