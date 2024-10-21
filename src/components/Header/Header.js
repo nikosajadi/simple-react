@@ -4,6 +4,7 @@ import Navbar from '../Navbar/Navbar';
 import { useLocation } from 'react-router-dom';
 import CartContext from "../../contexts/CartContext";
 import { PiShoppingCartFill } from "react-icons/pi";
+import PropTypes from 'prop-types'; // Import PropTypes
 
 const Header = () => {
   let { pathname } = useLocation();
@@ -32,4 +33,7 @@ const Header = () => {
   );
 };
 
+Header.propTypes = {
+  carts: PropTypes.arrayOf(PropTypes.object) // Specify the type for carts array
+}; 
 export default Header;

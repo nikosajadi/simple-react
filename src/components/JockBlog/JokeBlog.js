@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Button from '../Button/Button';
 import './JokeBlog.css';
+import PropTypes from 'prop-types'; // Import PropTypes
+
 
 const JockBlog = () => {
   const [jokes, setJokes] = useState([]); 
@@ -72,5 +74,7 @@ const JockBlog = () => {
     </div>
   );
 };
-
+JockBlog.propTypes = {
+  initialPageNumber: PropTypes.number, // Example prop type for the initial page number
+};
 export default JockBlog;

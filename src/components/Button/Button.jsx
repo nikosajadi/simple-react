@@ -1,6 +1,6 @@
 import './Button.css';
 import React from 'react';
-
+import PropTypes from 'prop-types';
 
 
 // The handleClick prop is given a default value of an empty function to avoid errors.
@@ -14,6 +14,11 @@ const Button = ({
     {children}
   </button>
 );
+
+Button.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+  children: PropTypes.element,
+}
 
 export default Button;
 

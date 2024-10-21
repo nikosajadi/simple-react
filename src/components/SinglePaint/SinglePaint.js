@@ -15,5 +15,9 @@ const SinglePaint = (props) => {
 
         </div>
     );
-}
+
+};
+
+
+
 export default SinglePaint;
