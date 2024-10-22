@@ -10,7 +10,10 @@
   .Navbar li {
     margin: 0 10px; /* Adds space between buttons */
   }
-  
+  /* Link styling */
+.Navbar li a {
+  text-decoration: none; /* Remove underline from links */
+}
   .Navbar li .nav-btn {
     font-family: 'Roboto', sans-serif;
     padding: 10px 20px; /* Larger padding for a more substantial look */

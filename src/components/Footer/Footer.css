@@ -6,12 +6,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  
-  .Footer h5 {
-    padding: 0px;
-    margin: 0px;
-  }
-  
+
   .Footer div {
     display: flex; /* Ensures the buttons are in a row */
     align-items: center;
@@ -25,19 +20,18 @@
     color: #580916; /* Dark text color */
     cursor: pointer;
     transition: all 0.3s ease; /* Smooth hover effects */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 10px 20px; /* Add padding for a nicer look */
     margin-right: -15px; /* Overlap the buttons */
     position: relative;
   }
   
   .Footer button.blue {
-    background-color: rgb(106, 122, 212);
-    color: #eee;
+  
+    color: #1d36a8;
   }
   
   .Footer button.green {
-    background-color: rgba(7, 83, 5, 0.397);
-    color: #333;
+    
+    color: #076917;
   }
   
