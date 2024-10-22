@@ -19,3 +19,24 @@
     margin: 0;
     padding: 0;
 }
+.cart-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .shopping-cart-icon {
+    font-size: 40px; /* Adjust size as needed */
+    color: #000; /* Adjust color as needed */
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -10px; /* Position the number slightly above the icon */
+    right: -10px; /* Position the number to the right */
+    background-color: rgb(17, 0, 255); /* Background color for the cart count */
+    color: white; /* Text color */
+    padding: 5px 10px;
+    border-radius: 50%; /* Make the count appear circular */
+    font-size: 14px; /* Adjust font size as needed */
+    font-weight: bold;
+  }

@@ -34,12 +34,12 @@ const Painting = ({ data }) => {
         {data.map((item) => (
           <li key={item.id}> {/* Add unique key */}
             {/* Corrected the Link to use item.id instead of data.id */}
+
+            <img src={`/assets/img/${item.image}`} alt={item.name} />
+            <span>
             <Link to={`/painting/${item.id}`}>
               <h3>{item.name}</h3> {/* Name is now correctly linked */}
             </Link>
-            <img src={`/assets/img/${item.image}`} alt={item.name} />
-            <span>
-              <h4>Price: {item.price}</h4>
             </span>
 
             <Button
@@ -58,7 +58,7 @@ const Painting = ({ data }) => {
                 </>
               ) : (
                 <>
-                  <MdOutlineAdd /> Add to Cart
+                  <MdOutlineAdd /> Intrested
                 </>
               )}
             </Button>

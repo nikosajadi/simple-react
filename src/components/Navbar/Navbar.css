@@ -4,14 +4,34 @@
     margin: 0px;
     padding: 0px;
     display: flex;
-}
-.Navbar li button {
-    border: none;
-    font-size: 10px;
-    color: #2c3e50;
+    justify-content: center; /* Centers the buttons */
+  }
+  
+  .Navbar li {
+    margin: 0 10px; /* Adds space between buttons */
+  }
+  
+  .Navbar li .nav-btn {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px; /* Larger padding for a more substantial look */
+    border-radius: 20px; /* Rounded corners for modern design */
+    border: 2px solid white; /* Border color */
+    background-color: white; /* White background */
+    color: #580916; /* Dark text color for contrast */
     cursor: pointer;
-}
-.Navbar li button:hover {
-    border: none;
-    color: #c0392b;
-}
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .Navbar li .nav-btn:hover {
+    background-color: #580916; /* Background color changes on hover */
+    color: white; /* Text color changes to white on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+    transform: translateY(-2px); /* Hover effect to lift the button */
+  }
+  
+  .Navbar li .nav-btn:active {
+    transform: translateY(0); /* Return to normal when clicked */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Normal shadow when clicked */
+  }
+  

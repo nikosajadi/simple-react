@@ -12,24 +12,23 @@ const Header = () => {
  
   const { carts } = useContext(CartContext);
 
-  if (pathname === '/') title='Shop'
-  if (pathname === "/about") title = "About";
-  if (pathname === "/blog") title = "Blog";
-  if (pathname === "/contact") title = "Contact";
-  if (pathname.includes('painting')) title = "Shop";
+  if (pathname === '/') title='MyPaintings'
+  if (pathname === "/about") title = "About me";
+  if (pathname === "/JokeBlog") title = "Programming Jocke Blog";
+  if (pathname === "/contact") title = "Contact me";
+  if (pathname.includes('painting')) title='My Paintings';
 
   return (
     <div className="Header">
-      <div className="TopBar">
-        <Navbar />
-        <div>
-         <h4>{carts.length}</h4>
-        </div>
-        <PiShoppingCartFill />
-
-      </div>
-      <h3>{title}</h3> 
+    <div className="TopBar">
+      <Navbar />
     </div>
+    <div className="cart-container">
+      <PiShoppingCartFill className="shopping-cart-icon" />
+      <h4 className="cart-count">{carts.length}</h4>
+    </div>
+    <h3>{title}</h3>
+  </div>
   );
 };
 

@@ -1,69 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .paintings {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    flex-direction: row; /* Images are displayed in a row */
-    padding: 0;
-    flex-wrap: wrap; /* If there is not enough space, images will move to the next row */
-    justify-content: center; /* Centers the images on the page */
-  }
-  
-  .paintings li {
-    margin: 10px;
-    width: 200px;
-    display: flex;
-    flex-direction: column; /* Inside each image, elements (title, image, price) are arranged vertically */
-  }
-  
-  .paintings li img {
-    max-width: 100%;
-    width: 200px; /* Fixed width for images */
-    height: auto; /* Auto height to maintain aspect ratio */
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .paintings li h3 {
-    padding: 0px;
-    margin: 5px;
-  }
-  
-  .paintings li span { 
-    padding: 10px;
-    height: 20px;
-    width: 100%;
-  }
-  
-  .slideshow img {
-    width: 100%;
-  }
-  
-  .placeholder-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .placeholder {
-    width: 45%;
-    height: 200px;
-    margin: 10px;
-    position: relative;
-  }
-  
-  .placeholder::after {
-    content: ' ';
-    z-index: 1;
-    background-color: rgba(0,0,0,0.4);
-    position: absolute;
-    height: 200px;
-    width:100%;
-    top: 0;
-    left: 0;
-  }
-  
-  .my-awesome-placeholder {
-    width: 200px;
-    margin: 10px;
-  }
-  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Ensure paintings wrap to the next line if there's not enough space */
+  justify-content: center; /* Center all the paintings */
+}
+
+.paintings li {
+  width: 300px;  /* Increased width of each painting item */
+  margin: 30px;  /* Added more margin to space them out */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paintings li img {
+  width: 100%; /* Set image width to 100% of the parent li's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+.paintings li h3 {
+  margin: 15px 0; /* Increased margin for spacing */
+  font-family: 'Roboto', sans-serif; /* Using Google Font */
+  font-size: 22px; /* Increased font size */
+  color: #580916; /* Customize the color */
+  text-align: center;
+  font-weight: 700;
+}
+
+.paintings li span {
+  width: 100%;
+  text-align: center;
+  font-size: 16px; /* Slightly larger font for subtitle */
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #580916; /* Link color */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #9eaf4c; /* Change color on hover */
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  padding: 12px 20px; /* Increased padding for larger buttons */
+  margin-top: 15px;  /* Increased margin for better spacing */
+  cursor: pointer;
+  border: 2px solid #580916;
+  background-color: white;
+  color: #580916;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #580916;
+  color: white;
+}
