@@ -1,4 +1,10 @@
 [
+  {
+    "id": "randomid1",
+    "name": "Rainy Venice",
+    "image": "1.png",
+    "price": 20
+  },
 
   {
     "id": "randomid2",

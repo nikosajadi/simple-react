@@ -6,12 +6,7 @@
 .Header .TopBar {
     display: flex;
 }
-.Header .Cart {
-    display: flex;
-    width: 200px;
-    justify-content: flex-end;
-    align-items: center;    
-}
+
 .Header .Cart svg {
     padding-left: 4px;   
 }
@@ -33,7 +28,7 @@
     position: absolute;
     top: -10px; /* Position the number slightly above the icon */
     right: -10px; /* Position the number to the right */
-    background-color: rgb(17, 0, 255); /* Background color for the cart count */
+    background-color: rgb(97, 15, 46); /* Background color for the cart count */
     color: white; /* Text color */
     padding: 5px 10px;
     border-radius: 50%; /* Make the count appear circular */
