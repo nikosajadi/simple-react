@@ -1,10 +1,12 @@
 import React from "react";
-import './About.css'; // Add a CSS file to style the component
+import './About.css';
+import Profile from './profile.jpg';
 
 const About = () => {
   return (
     <div className="about-container">
-      <h1>About Me</h1>
+      <h2>About Me</h2>
+      <img src={Profile} alt="Profile" />
       <p>
         <strong>Personal Background:</strong> I am Niko, a passionate painter with a long history of participating in artistic exhibitions. My love for art has shaped the way I approach my work, and I integrate that creative mindset into my role as a frontend developer.
       </p>
