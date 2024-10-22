@@ -4,21 +4,40 @@
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
-}
-.Footer h5 {
+    align-items: center;
+  }
+  
+  .Footer h5 {
     padding: 0px;
     margin: 0px;
-}
-.Footer button {
-    font-size: 14px;
-    text-transform: uppercase;
-    margin: 2px;
-}
-.Footer button.blue {
-    background-color: rgb(2, 19, 116);
+  }
+  
+  .Footer div {
+    display: flex; /* Ensures the buttons are in a row */
+    align-items: center;
+  }
+  
+  .Footer button {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid white; /* Border color */
+    background-color: white; /* White background */
+    color: #580916; /* Dark text color */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px 20px; /* Add padding for a nicer look */
+    margin-right: -15px; /* Overlap the buttons */
+    position: relative;
+  }
+  
+  .Footer button.blue {
+    background-color: rgb(106, 122, 212);
     color: #eee;
-}
-.Footer button.green {
-    background-color: rgba(0, 128, 49, 0.397);
+  }
+  
+  .Footer button.green {
+    background-color: rgba(7, 83, 5, 0.397);
     color: #333;
-}
+  }
+  
