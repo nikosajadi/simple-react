@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 .paintings {
   list-style: none;
   margin: 0;
@@ -35,24 +33,18 @@
   font-weight: 700;
 }
 
-.paintings li span {
-  width: 100%;
-  text-align: center;
-  font-size: 16px; /* Slightly larger font for subtitle */
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  margin-bottom: 15px;
+/* Style the Link inside each painting */
+.paintings li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #580916; /* Link color to match your theme */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
-a {
-  text-decoration: none;
-  color: #580916; /* Link color */
-  transition: color 0.3s ease;
+/* Change color on hover */
+.paintings li a:hover {
+  color: #9eaf4c; /* A light green or another color on hover */
 }
 
-a:hover {
-  color: #9eaf4c; /* Change color on hover */
-}
 
 button {
   font-family: 'Roboto', sans-serif;
@@ -71,4 +63,17 @@ button {
 button:hover {
   background-color: #580916;
   color: white;
+}
+.painting-link-container {
+  text-align: center; /* Optional: Center the link within the container */
+}
+
+.painting-link-container a {
+  text-decoration: none;
+  color: #580916; /* Link color */
+  transition: color 0.3s ease;
+}
+
+.painting-link-container a:hover {
+  color: #9eaf4c; /* Hover color for the link */
 }

@@ -1,0 +1,15 @@
+.painting-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.painting-detail-img {
+    width: 100%;  /* Make the image responsive */
+    max-width: 600px; /* Set a maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

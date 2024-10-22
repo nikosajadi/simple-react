@@ -33,15 +33,16 @@ const Painting = ({ data }) => {
       <ul className="paintings">
         {data.map((item) => (
           <li key={item.id}> {/* Add unique key */}
-            {/* Corrected the Link to use item.id instead of data.id */}
-
             <img src={`/assets/img/${item.image}`} alt={item.name} />
             <span>
-            <Link to={`/painting/${item.id}`}>
-              <h3>{item.name}</h3> {/* Name is now correctly linked */}
-            </Link>
+              {/* Correct class application here */}
+              <div className="painting-link-container">
+                <Link to={`/painting/${item.id}`}>
+                  <h3>{item.name}</h3>
+                </Link>
+              </div>
             </span>
-
+  
             <Button
               handleClick={() => handleAdd(item.id)}
               style={{
@@ -58,7 +59,7 @@ const Painting = ({ data }) => {
                 </>
               ) : (
                 <>
-                  <MdOutlineAdd /> Intrested
+                  <MdOutlineAdd /> Interested
                 </>
               )}
             </Button>
