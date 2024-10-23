@@ -1,7 +1,7 @@
 ## My React Project
 Welcome to my React project! This repository is created to share my journey of building a React application from scratch. Whether you're a beginner or someone looking to refresh your React knowledge, this project covers all the necessary steps to learn and understand React concepts.
 
-## In addition to learning React, you can also see a part of my artistic life and explore my paintings within this project.
+##In addition to learning React, you can also see a part of my artistic life and explore my paintings within this project.
 
 ## Project Overview
 This project is a simple yet effective React application that showcases fundamental concepts such as components, state, props, hooks, and more. By following this project, you'll get hands-on experience with React and its ecosystem.
