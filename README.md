@@ -9,7 +9,8 @@ This project is a simple yet effective React application that showcases fundamen
 Feel free to explore the code, experiment with it, and contribute to improve the application. Whether you’re learning React for the first time or brushing up on your skills, this project serves as a great learning tool.
 
 ## Live Demo
-# You can see the live version of this project deployed on Vercel: https://my-simple-react.vercel.app/
+ You can see the live version of this project deployed on Vercel:
+# https://my-simple-react.vercel.app/
 
 ## Project Overview
 
